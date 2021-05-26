@@ -72,9 +72,9 @@ class _HomeState extends State<Home> {
                 controller: _controllerCep,
               ),
             ),
-            RaisedButton(
-              color: Colors.blue,
-              textColor: Colors.white,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.blue, onPrimary: Colors.white),
               child: Text("Consultar"),
               onPressed: _recuperarCep,
             )
